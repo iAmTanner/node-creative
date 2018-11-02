@@ -1,0 +1,137 @@
+body {
+  padding: 0px;
+  margin: 0px;
+  background-color: #48352F;
+}
+
+#header_section {
+  background-color: #B8A78B;
+  width: 100%;
+  height: 200px;
+}
+
+#header_text {
+  color: white;
+  font-weight: bold;
+  font-family: 'Baloo Bhaijaan', cursive;
+  font-size: 72px;
+  text-align: center;
+  line-height: 200px;
+}
+
+.body_section {
+  margin: 8px auto;
+  width: 80%;
+  padding: 12px;
+  background-color: #aaaaaa;
+  font-family: 'Baloo Bhaijaan', cursive;
+  font-size: 24px;
+}
+
+#name_section input{
+  display: inline;
+  border: none;
+  width: 450px;
+  height: 48px;
+  font-size: 32px;
+  padding: 4px 16px;
+  font-family: 'Baloo Bhaijaan', cursive;
+  border-radius: 12px;
+}
+
+#name_section input:focus {
+    outline-width: 0;
+}
+
+#fighter_list {
+  list-style-type: none;
+  text-align: center;
+}
+
+#fighter_list li{
+  display: inline-block;
+  float: none;
+}
+
+#fighter_list li:hover{
+  background-color: #ccc;
+}
+
+#fighter_list img {
+  width: 100px;
+  height: 100px;
+  margin: auto;
+}
+
+#battle_section {
+  height: 80vh;
+}
+
+#battle_button {
+  height: 60px;
+  width: 120px;
+  border: none;
+  font-family: 'Baloo Bhaijaan', cursive;
+  font-size: 24px;
+  margin: auto;
+  padding: 14px 32px;
+  cursor: pointer;
+  background-color: #6f573f;
+}
+
+#arena {
+  margin: 48px auto 0 auto;
+  text-align: center;
+}
+
+#countdown {
+  margin: auto;
+  text-align: center;
+  font-size: 24px;
+}
+
+#winner_text {
+  margin: auto;
+  text-align: center;
+  font-size: 24px;
+  color: gold;
+}
+
+#player_one_container {
+  display: inline-block;
+  padding: 0 12px;
+  height: 500px;
+  width: 300px;
+}
+
+#player_one_image {
+  width: 200px;
+  height: 200px;
+  margin: auto;
+}
+
+#vs_container {
+  display: inline-block;
+  height: 10vh;
+  width: 10vh;
+  margin: auto;
+}
+
+#vs_container img{
+  height: 100%;
+  width: 100%;
+}
+
+#player_two_container {
+  display: inline-block;
+  padding: 0 12px;
+  height: 500px;
+  width: 300px;
+}
+
+#player_two_image {
+  width: 200px;
+  height: 200px;
+  margin: auto;
+}
+

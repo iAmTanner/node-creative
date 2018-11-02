@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head title="Node Creative">
+    <link rel="stylesheet" type="text/css" href="stylesheets/style.css">  
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhaijaan" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  </head>
+  
+  <body>
+      <section id="header_section">
+          <div id="header_text">Welcome To Ultimate Fight Club</div>
+      </section>
+      
+      <section id="name_section" class="body_section">
+          <div>Step One: Choose a Name!</div>
+          <input type="text" id="player_name"/>
+      </section>
+              
+      <section id="creation_section" class="body_section">
+          <div>Step Two: Select your Fighter! </div>
+          <div id="fighter_type_text"></div>
+          <ul id="fighter_list">
+              <li><img id="character_alien" src="alien.png"></li>
+              <li><img id="character_ogre" src="ogre.jpg"></li>
+              <li><img id="character_old_man" src="old-man.png"></li>
+              <li><img id="character_pokemon" src="pokemon.gif"></li>
+              <li><img id="character_red_hair" src="red-hair.png"></li>
+          </ul>
+      </section>
+      
+      <section id="battle_section" class="body_section">
+          <div>Step Three: <span style="color: red">BATTLE!</span></div>
+          <button id="battle_button" onclick="begin_fight()">Fight!</button>
+          <div id="countdown"></div>
+          <div id="winner_text"></div>
+          <div id="arena">
+              <div id="player_one_container"><img src="balnk.PNG" id="player_one_image"></div>
+              <div id="vs_container"><img src="vs.png"></div>
+              <div id="player_two_container"><img src="balnk.PNG" id="player_two_image"></div>
+          </div>
+      </section>
+      
+    <script type="text/javascript" src="scripts.js"></script>
+  </body>
+</html>
