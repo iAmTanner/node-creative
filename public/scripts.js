@@ -20,6 +20,7 @@ document.getElementById("character_red_hair").addEventListener("click", function
 });
 
 function begin_fight() {
+    document.getElementById('winner_text').innerHTML = "";
     var playerName = document.getElementById("player_name").value;
     var characterType = document.getElementById('fighter_type_text').textContent;
     
@@ -65,8 +66,6 @@ function begin_fight() {
             }
             
             playerOneContainer.innerHTML = me.name;
-            console.log("setting " + playerOneImage + " src to " + image1);
-            playerOneImage.src = image1;
             
             switch(them.char) {
                 case("Ogre"):
@@ -87,8 +86,6 @@ function begin_fight() {
             }
             
             playerTwoContainer.innerHTML = them.name;
-            console.log("setting " + playerTwoImage + " src to " + image2);
-            playerTwoImage.src = image2;
             
             //Determine the winner
             var countdownHtml = document.getElementById("countdown");
@@ -105,16 +102,16 @@ function begin_fight() {
                     $('#battle_button').show();
                     
                     //Decide winner and update screen
-                    var winner = Math.floor(Math.random() * 2);
+                    var winner = Math.floor(Math.random() * 100);
                     console.log('winner', winner);
-                    if (winner == 0) {
+                    if (winner < 50) {
                         document.getElementById('winner_text').innerHTML = me.name + " WINS!";
                     }
                     else {
                         document.getElementById('winner_text').innerHTML = them.name + " WINS!";
                     }
                 }
-            }, 250);
+            }, 1000);
         });
     });
 }

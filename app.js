@@ -23,7 +23,6 @@ app.get('/addPlayer/:name/:char', (req, res) => {
     if (!dupe)  {
         current_player = player;
         players.push(player);
-        console.log('adding player', req.params);
         res.status(200).send(req.params);
     }
     else {
@@ -37,7 +36,7 @@ app.get('/getRandomPlayer', (req, res) => {
         res.send(null);
     var rando = Math.floor(Math.random() * players.length);
     if (players[rando] === current_player) {
-        if (rando === players.length)
+        if (rando === players.length - 1)
             rando = rando - 1;
         else
             rando = rando + 1;

@@ -95,6 +95,7 @@ body {
   text-align: center;
   font-size: 24px;
   color: gold;
+  text-transform: uppercase;
 }
 
 #player_one_container {
